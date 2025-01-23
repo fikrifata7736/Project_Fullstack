@@ -1,0 +1,31 @@
+GET http://localhost:8000/users
+
+
+###
+GET http://localhost:8000/users/bab8fe48-e2c9-4c73-aa16-db963931b7ce
+
+###
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "age": 30
+}
+
+
+
+###
+PUT  http://localhost:8000/users/bab8fe48-e2c9-4c73-aa16-db963931b7ce
+Content-Type: application/json
+
+{
+    "name": "Asep ",
+    "email": "asep123@example.com",
+    "age": 28
+}
+
+
+###
+DELETE   http://localhost:8000/users/bab8fe48-e2c9-4c73-aa16-db963931b7ce
